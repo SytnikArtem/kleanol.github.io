@@ -4,6 +4,15 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+  .first, .twelfth
+    padding: 0
+
+  .dspn
+    display: none
+
+  .section
+    padding: 60px 0px
+
   .first__img-block
     flex-wrap: wrap
     justify-content: center
@@ -11,20 +20,52 @@
   .first__img-block__item
     max-width: 290px
 
-
+  .twelfth__block
+    border: none
+    &:before
+      display: none
+    &:after
+      display: none
+  .twelfth__product
+    left: 0
+    height: auto
+  .twelfth__btn
+    margin: 19px auto 0
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  .section
+    padding: 40px 0px
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  .section
+    padding: 30px 0px
+
+  .twelfth__block__image-list
+    flex-direction: column
+    align-items: center
+
+  .twelfth__product
+    width: auto
+    max-width: 362px
+
+  .twelfth__list__item
+    .first__number
+      margin: 0 24px 0 10px
+      position: relative
+      padding: 10px
+      &:before
+        display: none
+  .twelfth__list__item__text
+    width: 100%
+
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  .section
+    padding: 25px 0px
 
 
 /* Custom, iPhone Retina */

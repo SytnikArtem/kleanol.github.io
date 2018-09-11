@@ -92,7 +92,46 @@ img
 	text-align: center
 	line-height: 40px
 
+.btn
+	cursor: pointer
+	outline: 0
+	border: none
+	width: 226px
+	height: 74px
 
+	background: #f74c18
+	background: -moz-linear-gradient(left, #f74c18 0%, #f85209 50%, #f96308 100%)
+	background: -webkit-linear-gradient(left, #f74c18 0%,#f85209 50%,#f96308 100%)
+	background: linear-gradient(to right, #f74c18 0%,#f85209 50%,#f96308 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f74c18', endColorstr='#f96308',GradientType=1 )
+	box-shadow: 3px 4px 10px rgba(0,0,0,.25)
+	border-radius: 40px
+	position: relative
+	font-weight: 700
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	color: #fff
+	&:after
+		content: ''
+		border-radius: 40px
+		position: absolute
+		width: 214px
+		height: 64px
+		border: 2px solid #eaf2f9
+		opacity: .23
+		top: 5px
+		left: 6px
+	.btn-1
+
+		font-size: 28px
+		line-height: 18px
+	.btn-2
+		font-size: 17px
+		line-height: 20px
+		font-family: 'Roboto Condensed', sans-serif
+		font-weight: 700
 /***************************first************************/
 .first
 	padding: 79px 0px
@@ -148,17 +187,31 @@ img
 	font-weight: 500
 	font-size: 20px
 	text-align: center
+	max-width: 100%
 
 .first__conclus-block
 	display: flex
 	flex-direction: column
 	text-align: center
 	align-items: center
-	background: url("../img/first4.jpg") no-repeat top
+	border-top: 1px solid #e5e5e5
 	padding: 30px 0 0 0
 	margin-top: 35px
-	overflow-y: hidden
-
+	max-width: 100%
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		width: 20px
+		height: 20px
+		-webkit-transform: rotate(40deg) skewX(-10deg)
+		transform: rotate(40deg) skewX(-10deg)
+		border: 1px solid #e1e1e1
+		left: calc(50% - 10px)
+		top: -10px
+		background: #fff
+		border-left: none
+		border-top: none
 
 .first__conclus_title
 	font-size: 24px
@@ -181,7 +234,148 @@ img
 	font-size: 22px
 	font-weight: 500
 	margin-top: 10px
+	max-width: 100%
+
+
 
 /***************************end first************************/
+
+/***************************twelfth************************/
+.orange
+	color: #fc5b00
+
+.twelfth
+	padding: 140px 0px 107px
+	&__logo
+		margin: -1px auto 20px
+		width: 94px
+		height: 98px
+		background: url("../img/twelfth1.png") no-repeat
+		display: flex
+		align-items: center
+		justify-content: center
+	.container
+		border-top: 1px solid #e5e5e5
+
+.twelfth__block
+	display: flex
+	flex-direction: column
+	justify-content: center
+	border-right: 1px solid #fdad7f
+	border-left: 1px solid #fdad7f
+	position: relative
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		width: 15px
+		height: 15px
+		background: #fff
+		border-right: 1px solid #fdad7f
+		border-top: 1px solid #fdad7f
+		transform: rotate(45deg)
+		left: -8px
+		top: calc(50% - 10px)
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		width: 15px
+		height: 15px
+		background: #fff
+		border-right: 1px solid #fdad7f
+		border-top: 1px solid #fdad7f
+		transform: rotate(-135deg)
+		right: -8px
+		top: calc(50% - 10px)
+	h2
+		color: #444444
+		font-size: 20px
+		font-weight: 400
+		margin: 20px auto
+		text-align: center
+	&__image-list
+		display: flex
+		justify-content: flex-end
+		flex-direction: row
+		padding: 51px 0px 0px
+
+.twelfth__product
+	width: 426px
+	border: 30px solid #f3f6f9
+	border-radius: 50%
+	background: #fff
+	height: 426px
+	top: -32px
+	left: -39px
+	z-index: 2
+	position: relative
+	text-align: center
+	&__pills
+		position: absolute
+		z-index: 2
+		bottom: -22px
+		left: 150px
+	&__plashka
+		position: absolute
+		width: 85px
+		height: 85px
+		background: #3f1f7b url(../img/gift.svg) no-repeat 50% 48%
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		top: -27px
+		left: -32px
+		z-index: 4
+
+.twelfth__list
+	display: flex
+	flex-direction: column
+	justify-content: center
+	max-width: 581px
+	&__item
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		position: relative
+		margin: 0px 0px 40px
+		&:nth-child(3)
+			margin: 0px 0px 38px;
+
+		.first__number
+			margin: 0 auto
+			position: relative
+			&:before
+				content: ''
+				left: -118px;
+				top: 15px
+				position: absolute
+				display: block
+				height: 1px
+				background: #fff2d2
+				width: 108px
+		&__text
+			font-size: 20px
+			color: #333333
+			font-weight: 400
+			width: 81%
+
+	&__link
+		display: flex
+		justify-content: center
+		a
+			color: #fc5b00
+			font-size: 18px
+
+.twelfth__btn
+	display: flex
+	align-self: center
+	margin: -27px 0px 0px
+
+
+/***************************end twelfth************************/
+
 
 @import "media" // Всегда в конце
