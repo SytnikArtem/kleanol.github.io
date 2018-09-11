@@ -70,6 +70,9 @@ body
 	font-family: 'Roboto', sans-serif
 	overflow-x: hidden
 
+img
+  max-width: 100%
+
 .img-responsive
 	display: block
 	max-width: 100%
@@ -79,8 +82,9 @@ body
 	text-align: center
 
 .container
-	max-width: 1170px
+	max-width: 1190px
 	width: 100%
+	padding: 0 10px
 	margin: 0 auto
 .title
 	font-size: 44px
@@ -91,24 +95,28 @@ body
 
 /***************************first************************/
 .first
-	padding: 79px 0px;
+	padding: 79px 0px
 .stroke
 	display: inline-block
 .purple
 	color: #3f1f7b
+
 .first__img-block
 	display: flex
+	flex-wrap: wrap
 	flex-direction: row
 	justify-content: space-between
 	margin: 52px auto 0
+
 
 .first__img-block__item
 	display: flex
 	flex-direction: column
 	align-items: center
 	justify-content: flex-start
-	margin: 0px 43px
-	width: 26%
+	width: 370px
+	margin: 10px
+
 
 .first__number
 	background: #ffbd20
@@ -133,7 +141,7 @@ body
 	background: -moz-linear-gradient(left, #613497 0%, #643595 4%, #673792 9%, #6b3890 13%, #6f3a8d 18%, #743c89 23%, #783e86 28%, #7e407f 34%, #89457a 39%, #954a71 44%, #a15067 49%, #ae555e 53%, #b45859 58%, #c15d50 62%, #c7604b 67%, #cd6247 72%, #d9673e 77%, #e46c36 82%, #ed702f 87%, #f1722c 91%, #f5732a 96%, #f87527 100%)
 	background: -webkit-linear-gradient(left, #613497 0%,#643595 4%,#673792 9%,#6b3890 13%,#6f3a8d 18%,#743c89 23%,#783e86 28%,#7e407f 34%,#89457a 39%,#954a71 44%,#a15067 49%,#ae555e 53%,#b45859 58%,#c15d50 62%,#c7604b 67%,#cd6247 72%,#d9673e 77%,#e46c36 82%,#ed702f 87%,#f1722c 91%,#f5732a 96%,#f87527 100%)
 	background: linear-gradient(to right, #613497 0%,#643595 4%,#673792 9%,#6b3890 13%,#6f3a8d 18%,#743c89 23%,#783e86 28%,#7e407f 34%,#89457a 39%,#954a71 44%,#a15067 49%,#ae555e 53%,#b45859 58%,#c15d50 62%,#c7604b 67%,#cd6247 72%,#d9673e 77%,#e46c36 82%,#ed702f 87%,#f1722c 91%,#f5732a 96%,#f87527 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#613497', endColorstr='#f87527',GradientType=1 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#613497', endColorstr='#f87527',GradientType=1 )
 
 .first__text
 	color: #010101
@@ -156,17 +164,23 @@ body
 	font-size: 24px
 	color: #000000
 	font-weight: 500
-	background: #ffffff
-	background: -moz-linear-gradient(top, #ffffff 41%, #ffbd20 14%, #ffbd20 15%, #ffbd20 75%, #ffbd20 100%, #ffffff 100%)
-	background: -webkit-linear-gradient(top, #ffffff 41%,#ffbd20 14%,#ffbd20 15%,#ffbd20 75%,#ffbd20 100%,#ffffff 100%)
-	background: linear-gradient(to bottom, #ffffff 41%,#ffbd20 14%,#ffbd20 15%,#ffbd20 75%,#ffbd20 100%,#ffffff 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 )
+	position: relative
+	z-index: 2
+	&:after
+		width: 100%
+		position: absolute
+		content: ''
+		height: 12px
+		top: 9px
+		left: 0px
+		background: #ffbd20
+		z-index: -1
 
 .first__conclus-text
 	color: #2d2d2d
 	font-size: 22px
 	font-weight: 500
-	margin-top: 10px;
+	margin-top: 10px
 
 /***************************end first************************/
 
